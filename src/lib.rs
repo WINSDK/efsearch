@@ -5,6 +5,8 @@ fn cmp(a: &str, b: &str) -> Ordering {
     for (x, y) in a.chars().zip(b.chars()) {
         if x < y {
             return Ordering::Less;
+        } else if x > y {
+            return Ordering::Greater;
         }
     }
 
